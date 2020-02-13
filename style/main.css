@@ -72,6 +72,10 @@ html, body {
   border-radius: 5px;
 }
 
+.header-container .login .menu {
+  display: none;
+}
+
 .cryptoplatform {
   background-color: rgba(21, 56, 67, 0.08);
 }

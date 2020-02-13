@@ -1,0 +1,55 @@
+@media screen and (max-width: 1085px) {
+
+
+    .video-container {
+        video {
+            max-width: 90%;
+        }
+    }
+}
+
+@media screen and (max-width: 605px) {
+    .header-container {
+        .login {
+            .enter {
+                display: none;
+            }
+
+            .registration {
+                display: none;
+            }
+
+            .menu {
+                display: block;
+                background: none;
+                border: none;
+                img {
+                    
+                }
+            }
+        }
+    }
+
+    .information-container {
+        max-width: 405px;
+        .main-information {
+            max-width: 405px;
+        }
+
+        .links {
+            max-width: 405px;
+        }
+
+        .immaterial-information {
+    
+            .dispute {
+                max-width: 405px;
+            }
+    
+            .report {
+                max-width: 405px;
+            }
+        }
+    }
+
+}

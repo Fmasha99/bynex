@@ -1,0 +1,35 @@
+@media screen and (max-width: 1085px) {
+  .video-container video {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 605px) {
+  .header-container .login .enter {
+    display: none;
+  }
+  .header-container .login .registration {
+    display: none;
+  }
+  .header-container .login .menu {
+    display: block;
+    background: none;
+    border: none;
+  }
+  .information-container {
+    max-width: 405px;
+  }
+  .information-container .main-information {
+    max-width: 405px;
+  }
+  .information-container .links {
+    max-width: 405px;
+  }
+  .information-container .immaterial-information .dispute {
+    max-width: 405px;
+  }
+  .information-container .immaterial-information .report {
+    max-width: 405px;
+  }
+}
+/*# sourceMappingURL=tablet.css.map */
