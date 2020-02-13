@@ -42,6 +42,15 @@ html, body {
   border: none;
   background: none;
   margin-right: 33px;
+  padding: 11px 13px 11px 12px;
+  border: 1px solid white;
+}
+
+.header-container .login .enter:hover {
+  border: 1px solid #153843;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
 }
 
 .header-container .login .registration {
@@ -53,6 +62,10 @@ html, body {
   color: #153843;
   background: none;
   padding: 11px 13px 11px 12px;
+  border: 1px solid white;
+}
+
+.header-container .login .registration:hover {
   border: 1px solid #153843;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -94,7 +107,7 @@ html, body {
 .cryptoplatform-container .lern {
   margin-top: 50px;
   margin-bottom: 273px;
-  font-family: Fira Sans;
+  font-family: "Fira Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -103,8 +116,15 @@ html, body {
   color: #FFFFFF;
   border: none;
   background: #69BCD7;
+  border: 2px solid #eceff0;
   border-radius: 5px;
   padding: 12px 21.36px 14.5px 22px;
+}
+
+.cryptoplatform-container .lern:hover {
+  background: #eceff0;
+  color: #69BCD7;
+  border: 2px solid #69BCD7;
 }
 
 .video-container {
@@ -201,5 +221,21 @@ html, body {
 
 .information-container .information-subtitle a:hover {
   color: #085774;
+}
+
+footer {
+  background: #153843;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+footer .footer-quote {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=main.css.map */
