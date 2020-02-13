@@ -7,6 +7,11 @@ html, body {
     src: url('../assets/fonts/Fira_Sans/FiraSans-Medium.ttf');
 }
 
+@font-face {
+    font-family: "Fira Sans regular";
+    src: url('../assets/fonts/Fira_Sans/FiraSans-Regular.ttf');
+}
+
 header {
    
 
@@ -121,3 +126,30 @@ main {
         padding: 12px 21.36px 14.5px 22px;
     }
 } //cryptoplatform-container
+
+.video-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+
+    video {
+        max-width: 823px;
+        box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.25);
+        margin-top: -200px;
+    }
+
+    .video-subtitle {
+        font-family: "Fira Sans regular";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+
+        text-align: center;
+
+        color: #99AAAF;
+        margin-top: 19px;
+        margin-bottom: 88px;
+    }
+
+} //video-container
