@@ -153,3 +153,70 @@ main {
     }
 
 } //video-container
+
+.information {
+    border-top: 1px solid #ECEFF0;
+    padding-top: 31px;
+    margin-bottom: 14px;
+}
+
+.information-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .main-information {
+        max-width: 397px;
+    }
+
+    .links {
+        max-width: 308px;
+    }
+
+    .immaterial-information {
+        display: flex;
+        flex-direction: column;
+
+        .dispute {
+            max-width: 365px;
+        }
+
+        .report {
+            max-width: 365px;
+            margin-top: 22px;
+        }
+    }
+
+    //for all information section's titles and subtitles
+
+    .information-title {
+        font-family: "Fira Sans";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+        
+        color: #153843;
+    }
+
+    .information-subtitle {
+        font-family: "Fira Sans regular";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+
+        color: #788083;
+
+        a {
+            text-decoration: none;
+            color: #788083;
+
+            &:hover {
+                color: #085774;
+            }
+        }
+        
+    }
+} //information-container

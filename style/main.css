@@ -131,4 +131,75 @@ html, body {
   margin-top: 19px;
   margin-bottom: 88px;
 }
+
+.information {
+  border-top: 1px solid #ECEFF0;
+  padding-top: 31px;
+  margin-bottom: 14px;
+}
+
+.information-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.information-container .main-information {
+  max-width: 397px;
+}
+
+.information-container .links {
+  max-width: 308px;
+}
+
+.information-container .immaterial-information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.information-container .immaterial-information .dispute {
+  max-width: 365px;
+}
+
+.information-container .immaterial-information .report {
+  max-width: 365px;
+  margin-top: 22px;
+}
+
+.information-container .information-title {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #153843;
+}
+
+.information-container .information-subtitle {
+  font-family: "Fira Sans regular";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #788083;
+}
+
+.information-container .information-subtitle a {
+  text-decoration: none;
+  color: #788083;
+}
+
+.information-container .information-subtitle a:hover {
+  color: #085774;
+}
 /*# sourceMappingURL=main.css.map */
