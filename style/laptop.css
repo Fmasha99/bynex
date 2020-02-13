@@ -1,0 +1,28 @@
+@media screen and (max-width: 1085px) {
+  .information-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .information-container .main-information {
+    max-width: 600px;
+  }
+  .information-container .links {
+    max-width: 600px;
+    margin-top: 22px;
+  }
+  .information-container .immaterial-information {
+    max-width: 600px;
+    margin-top: 22px;
+  }
+  .information-container .immaterial-information .dispute {
+    max-width: 600px;
+  }
+  .information-container .immaterial-information .report {
+    max-width: 600px;
+  }
+}
+/*# sourceMappingURL=laptop.css.map */

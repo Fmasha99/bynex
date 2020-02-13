@@ -1,0 +1,30 @@
+@media screen and (max-width: 1085px) {
+
+    .information-container {
+        flex-direction: column;
+        max-width: 600px;
+        margin: 0 auto;
+
+        .main-information {
+            max-width: 600px;
+        }
+
+        .links {
+            max-width: 600px;
+            margin-top: 22px;
+        }
+
+        .immaterial-information {
+            max-width: 600px;
+            margin-top: 22px;
+
+            .dispute {
+                max-width: 600px;
+            }
+
+            .report {
+                max-width: 600px;
+            }
+        }
+    }
+}
