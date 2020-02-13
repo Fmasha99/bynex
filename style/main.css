@@ -1,0 +1,53 @@
+html, body {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url("../assets/fonts/Fira_Sans/FiraSans-Medium.ttf");
+}
+
+.header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 28px;
+  padding-bottom: 30.75;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-container .logo {
+  padding-left: 29px;
+}
+
+.header-container .login .enter {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #153843;
+  margin-right: 33px;
+}
+
+.header-container .login .registration {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #153843;
+  padding: 11px 13px 11px 12px;
+  border: 1px solid #153843;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=main.css.map */

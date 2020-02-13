@@ -1,0 +1,59 @@
+html, body {
+    margin: 0;
+}
+
+@font-face {
+    font-family: "Fira Sans";
+    src: url('../assets/fonts/Fira_Sans/FiraSans-Medium.ttf');
+}
+
+header {
+   
+
+} //header
+
+.header-container {
+    display: flex;
+    align-items: center;
+    padding-top: 28px;
+    padding-bottom: 30.75;
+    justify-content: space-between;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    .logo {
+        padding-left: 29px;
+    }
+
+    .login {
+
+        .enter {
+            font-family: "Fira Sans";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+            
+            color: #153843;
+
+            margin-right: 33px;
+        }
+
+        .registration {
+            font-family: "Fira Sans";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+
+            color: #153843;
+
+            padding: 11px 13px 11px 12px;
+
+            //border
+            border: 1px solid #153843;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+    } //.login
+} //header-container
