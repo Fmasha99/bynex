@@ -1,0 +1,39 @@
+@media screen and (max-width: 426px) {
+  .cryptoplatform-container .cryptoplatform-title {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  .cryptoplatform-container .cryptoplatform-subtitle {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  .cryptoplatform-container .lern {
+    font-size: 18px;
+  }
+  .video-container .video-subtitle {
+    font-size: 13px;
+    line-height: 15px;
+  }
+  .information-container {
+    max-width: 320px;
+  }
+  .information-container .main-information {
+    max-width: 320px;
+  }
+  .information-container .links {
+    max-width: 320px;
+  }
+  .information-container .immaterial-information .dispute {
+    max-width: 320px;
+  }
+  .information-container .immaterial-information .report {
+    max-width: 320px;
+  }
+  .information-container .information-title {
+    font-size: 15px;
+  }
+  .information-container .information-subtitle {
+    font-size: 12px;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */
