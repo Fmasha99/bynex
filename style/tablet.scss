@@ -6,6 +6,11 @@
             max-width: 90%;
         }
     }
+
+    .form {
+        left: 0;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 605px) {
@@ -19,7 +24,7 @@
                 display: none;
             }
 
-            .menu {
+            .menu-button {
                 display: block;
                 background: none;
                 border: none;

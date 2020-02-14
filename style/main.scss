@@ -33,6 +33,7 @@ header {
     .login {
 
         .enter {
+            cursor: pointer;
             font-family: "Fira Sans";
             font-style: normal;
             font-weight: 500;
@@ -56,6 +57,7 @@ header {
         }
 
         .registration {
+            cursor: pointer;
             font-family: "Fira Sans";
             font-style: normal;
             font-weight: 500;
@@ -76,8 +78,9 @@ header {
             }
         }
 
-        .menu {
+        .menu-button {
             display: none;
+            cursor: pointer;
         }
 
         
@@ -89,6 +92,7 @@ header {
         z-index: 5;
         width: 100vw;
         height: 100px;
+        box-shadow: 0px 0px 900px 900px rgba(0,0,0,0.9);
 
         ul {
             list-style-type: none;
@@ -112,10 +116,11 @@ header {
                 align-items: center;
 
                 border-bottom: 1px solid white;
+                cursor: pointer;
 
                 img {
-                    margin-top: auto;
-                    margin-bottom: auto;
+                    vertical-align: middle;
+
                 }
             }
         }
@@ -124,6 +129,155 @@ header {
 
 main {
 
+}
+
+.form {
+    position: fixed;
+    z-index: 5;
+    display: none;
+
+    width: 40%;
+    left: 30%;
+
+    background: #153843f5;
+    box-shadow: 0px 0px 900px 900px rgba(0,0,0,0.9);
+
+    
+
+    .form-options {
+
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2%;
+        align-items: center;
+        text-align: center;
+        padding-left: 3%;
+        padding-right: 3%;
+
+        .form-name {
+            font-family: "Fira Sans";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 35px;
+            text-align: center;
+
+            color: #eceff0;
+        }
+
+        .form-image {
+            vertical-align: middle;
+            right: 0;
+            cursor: pointer;
+        }
+
+    }
+
+    .enter-options {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+
+        justify-content: space-around;
+
+        p {
+            margin: 0;
+        }
+
+        .placeholder-login {
+            font-family: "Fira Sans regular";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 35px;
+            text-align: center;
+
+            color: #eceff0;
+        }
+
+        .login {
+            cursor: pointer;
+            border: none;
+            background: #eceff0;
+            border: 2px solid  #153843f5;
+            border-radius: 5px;
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+
+            //text
+            font-family: "Fira Sans";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 28px;
+            color: #153843f5;
+        }
+
+        .placeholder-password {
+            font-family: "Fira Sans regular";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 35px;
+            text-align: center;
+
+            color: #eceff0;
+        }
+
+        .password {
+            cursor: pointer;
+            border: none;
+            background: #eceff0;
+            border: 2px solid  #153843f5;
+            border-radius: 5px;
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+
+            //text
+            font-family: "Fira Sans";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 28px;
+            color: #153843f5;
+        }
+
+        .enter-form {
+            cursor: pointer;
+            margin-top: 5%;
+            margin-bottom: 5%;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+
+            //text
+            font-family: "Fira Sans";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 35px;
+            text-align: center;
+
+            color: #153843f5;
+
+            //background
+            border: none;
+            background: #eceff0;
+            border: 2px solid  #153843f5;
+            border-radius: 5px;
+
+            &:hover {
+                background: #153843f5;
+                color: #eceff0;
+                border: 2px solid #eceff0;
+
+            }
+        }
+    }
 }
 
 .cryptoplatform {
@@ -162,6 +316,7 @@ main {
     }
 
     .lern {
+        cursor: pointer;
         margin-top: 50px;
         margin-bottom: 273px;
 

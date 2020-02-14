@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="./style/laptop.css">
     <link rel="stylesheet" href="./style/tablet.css">
     <link rel="stylesheet" href="./style/mobile.css">
+    <script src="./script.js"></script>
+    <link rel="icon" href="./assets/images/favicon.png" type="image/icon type">
     <title>BYNEX</title>
 </head>
 <body>
@@ -15,21 +17,35 @@
             <div class="logo"><img src="./assets/images/logo.svg" alt="logo"></div>
         
             <div class="login">
-                <button class="enter">Войти</span>
-                <button class="registration">Зарегистрироваться</span>
-                <button class="menu"><img src="./assets/images/menu.png" alt=""></button>
+                <button class="enter" id="enter" onclick="openWindow('Войти')">Войти</span>
+                <button class="registration" id="registr" onclick="openWindow('Зарегистрироваться')">Зарегистрироваться</span>
+                <button class="menu-button"><img src="./assets/images/menu.png" alt=""></button>
             </div><!--login-->
             <div class="hamburger-menu">
                 <ul>
-                    <li><img src="./assets/images/cancel.png" alt=""></li>
-                    <li>Войти</li>
-                    <li>Зарегистрироваться</li>
+                    <li><img src="./assets/images/cancel.png" alt="" class="close"></li>
+                    <li class="suggest-menu">Войти</li>
+                    <li class="suggest-menu">Зарегистрироваться</li>
                 </ul>
             </div>
         </div><!--header-container-->
     </header>
 
     <main>
+        <section class="form">
+            <div class="form-options">
+                <span class="form-name" id="form-name"></span>
+                <img src="./assets/images/cancel.png" alt="" class="form-image">
+            </div>
+            <div class="enter-options">
+                <p class="placeholder-login">Введите логин</p>
+                <input type="text" class="login">
+                <p class="placeholder-password">Введите пароль</p>
+                <input type="password" class="password" placeholder="">
+                <button type="submit" class="enter-form" id='enter-form'></button>
+            </div>
+        </section>
+
         <section class="cryptoplatform">
             <div class="cryptoplatform-container">
                 <span class="cryptoplatform-title">Разрабатываемая криптоплатформа «Байнекс»</span>

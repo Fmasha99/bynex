@@ -33,6 +33,7 @@ html, body {
 }
 
 .header-container .login .enter {
+  cursor: pointer;
   font-family: "Fira Sans";
   font-style: normal;
   font-weight: 500;
@@ -54,6 +55,7 @@ html, body {
 }
 
 .header-container .login .registration {
+  cursor: pointer;
   font-family: "Fira Sans";
   font-style: normal;
   font-weight: 500;
@@ -72,8 +74,9 @@ html, body {
   border-radius: 5px;
 }
 
-.header-container .login .menu {
+.header-container .login .menu-button {
   display: none;
+  cursor: pointer;
 }
 
 .header-container .hamburger-menu {
@@ -82,6 +85,8 @@ html, body {
   z-index: 5;
   width: 100vw;
   height: 100px;
+  -webkit-box-shadow: 0px 0px 900px 900px rgba(0, 0, 0, 0.9);
+          box-shadow: 0px 0px 900px 900px rgba(0, 0, 0, 0.9);
 }
 
 .header-container .hamburger-menu ul {
@@ -109,11 +114,153 @@ html, body {
       -ms-flex-align: center;
           align-items: center;
   border-bottom: 1px solid white;
+  cursor: pointer;
 }
 
 .header-container .hamburger-menu ul li img {
-  margin-top: auto;
-  margin-bottom: auto;
+  vertical-align: middle;
+}
+
+.form {
+  position: fixed;
+  z-index: 5;
+  display: none;
+  width: 40%;
+  left: 30%;
+  background: #153843f5;
+  -webkit-box-shadow: 0px 0px 900px 900px rgba(0, 0, 0, 0.9);
+          box-shadow: 0px 0px 900px 900px rgba(0, 0, 0, 0.9);
+}
+
+.form .form-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 2%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+.form .form-options .form-name {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: center;
+  color: #eceff0;
+}
+
+.form .form-options .form-image {
+  vertical-align: middle;
+  right: 0;
+  cursor: pointer;
+}
+
+.form .enter-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.form .enter-options p {
+  margin: 0;
+}
+
+.form .enter-options .placeholder-login {
+  font-family: "Fira Sans regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+  color: #eceff0;
+}
+
+.form .enter-options .login {
+  cursor: pointer;
+  border: none;
+  background: #eceff0;
+  border: 2px solid  #153843f5;
+  border-radius: 5px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #153843f5;
+}
+
+.form .enter-options .placeholder-password {
+  font-family: "Fira Sans regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+  color: #eceff0;
+}
+
+.form .enter-options .password {
+  cursor: pointer;
+  border: none;
+  background: #eceff0;
+  border: 2px solid  #153843f5;
+  border-radius: 5px;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #153843f5;
+}
+
+.form .enter-options .enter-form {
+  cursor: pointer;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 35px;
+  text-align: center;
+  color: #153843f5;
+  border: none;
+  background: #eceff0;
+  border: 2px solid  #153843f5;
+  border-radius: 5px;
+}
+
+.form .enter-options .enter-form:hover {
+  background: #153843f5;
+  color: #eceff0;
+  border: 2px solid #eceff0;
 }
 
 .cryptoplatform {
@@ -149,6 +296,7 @@ html, body {
 }
 
 .cryptoplatform-container .lern {
+  cursor: pointer;
   margin-top: 50px;
   margin-bottom: 273px;
   font-family: "Fira Sans";

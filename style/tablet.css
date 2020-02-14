@@ -2,6 +2,10 @@
   .video-container video {
     max-width: 90%;
   }
+  .form {
+    left: 0;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 605px) {
@@ -11,7 +15,7 @@
   .header-container .login .registration {
     display: none;
   }
-  .header-container .login .menu {
+  .header-container .login .menu-button {
     display: block;
     background: none;
     border: none;
