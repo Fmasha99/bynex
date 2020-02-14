@@ -57,5 +57,49 @@
 }
 
 @media screen and (max-width: 370px) {
+    .header-container {
+        .logo {
+            img {
+                max-width: 165px;
+            }
+        }
+    }
 
+    .cryptoplatform-container {
+    
+        .cryptoplatform-title {
+            font-size: 33px;
+            line-height: 37px;
+        }
+    }
+
+    .video-container {
+
+        .video-subtitle {
+            padding-right: 2%;
+            padding-left: 2%;
+        }
+    }
+
+    .information-container {
+        max-width: 290px;
+        .main-information {
+            max-width: 290px;
+        }
+
+        .links {
+            max-width: 290px;
+        }
+
+        .immaterial-information {
+    
+            .dispute {
+                max-width: 290px;
+            }
+    
+            .report {
+                max-width: 290px;
+            }
+        }
+    }
 }
