@@ -194,7 +194,6 @@ html, body {
 }
 
 .form .enter-options .login {
-  cursor: pointer;
   border: none;
   background: #eceff0;
   border: 2px solid  #153843f5;
@@ -221,7 +220,6 @@ html, body {
 }
 
 .form .enter-options .password {
-  cursor: pointer;
   border: none;
   background: #eceff0;
   border: 2px solid  #153843f5;
