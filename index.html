@@ -24,8 +24,8 @@
             <div class="hamburger-menu">
                 <ul>
                     <li><img src="./assets/images/cancel.png" alt="" class="close"></li>
-                    <li class="suggest-menu">Войти</li>
-                    <li class="suggest-menu">Зарегистрироваться</li>
+                    <li class="suggest-menu" id="enter" onclick="openWindow('Войти')">Войти</li>
+                    <li class="suggest-menu" id="registr" onclick="openWindow('Зарегистрироваться')">Зарегистрироваться</li>
                 </ul>
             </div>
         </div><!--header-container-->
@@ -35,7 +35,7 @@
         <section class="form">
             <div class="form-options">
                 <span class="form-name" id="form-name"></span>
-                <img src="./assets/images/cancel.png" alt="" class="form-image">
+                <img src="./assets/images/cancel.png" alt="" class="form-image" id="close-button">
             </div>
             <div class="enter-options">
                 <p class="placeholder-login">Введите логин</p>
