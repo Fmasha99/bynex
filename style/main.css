@@ -45,13 +45,15 @@ html, body {
   margin-right: 33px;
   padding: 11px 13px 11px 12px;
   border: 1px solid white;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
 .header-container .login .enter:hover {
-  border: 1px solid #153843;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 5px;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .header-container .login .registration {
@@ -64,14 +66,19 @@ html, body {
   color: #153843;
   background: none;
   padding: 11px 13px 11px 12px;
-  border: 1px solid white;
-}
-
-.header-container .login .registration:hover {
   border: 1px solid #153843;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 5px;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
+}
+
+.header-container .login .registration:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .header-container .login .menu-button {
@@ -123,8 +130,7 @@ html, body {
 
 .form {
   position: fixed;
-  z-index: 5;
-  display: none;
+  z-index: 101;
   width: 40%;
   left: 30%;
   background: #153843f5;
@@ -162,6 +168,15 @@ html, body {
   vertical-align: middle;
   right: 0;
   cursor: pointer;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.form .form-options .form-image:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .form .enter-options {
@@ -219,20 +234,37 @@ html, body {
   color: #eceff0;
 }
 
-.form .enter-options .password {
+.form .enter-options .password-container {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form .enter-options .password-container .password {
   border: none;
   background: #eceff0;
   border: 2px solid  #153843f5;
   border-radius: 5px;
-  max-width: 90%;
   margin-left: auto;
   margin-right: auto;
+  max-width: 95%;
   font-family: "Fira Sans";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 28px;
   color: #153843f5;
+}
+
+.form .enter-options .password-container #show-password {
+  vertical-align: middle;
+  cursor: pointer;
 }
 
 .form .enter-options .enter-form {
@@ -253,6 +285,8 @@ html, body {
   background: #eceff0;
   border: 2px solid  #153843f5;
   border-radius: 5px;
+  -webkit-transition: background-color 0.5s, border 0.5s;
+  transition: background-color 0.5s, border 0.5s;
 }
 
 .form .enter-options .enter-form:hover {
@@ -309,12 +343,15 @@ html, body {
   border: 2px solid #eceff0;
   border-radius: 5px;
   padding: 12px 21.36px 14.5px 22px;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
 .cryptoplatform-container .lern:hover {
-  background: #eceff0;
-  color: #69BCD7;
-  border: 2px solid #69BCD7;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 
 .video-container {
@@ -406,11 +443,8 @@ html, body {
 
 .information-container .information-subtitle a {
   text-decoration: none;
-  color: #788083;
-}
-
-.information-container .information-subtitle a:hover {
   color: #085774;
+  cursor: pointer;
 }
 
 footer {
