@@ -7,15 +7,15 @@
     <link rel="stylesheet" href="./style/laptop.css">
     <link rel="stylesheet" href="./style/tablet.css">
     <link rel="stylesheet" href="./style/mobile.css">
-    <script src="./script.js"></script>
+    <script src="/script.js"></script>
     <link rel="icon" href="./assets/images/favicon.png" type="image/icon type">
     <title>BYNEX</title>
 </head>
 <body>
-    <header>
-        <div id="openHeader"></div>
-        <div id="menu-button"></div>
-    </header>
+
+    <div id="openHeader"></div>
+    <div id="menu-button"></div>
+    <script>openHeader();</script>
 
     <main>
 
@@ -23,8 +23,8 @@
             <div class="cryptoplatform-container">
                 <span class="cryptoplatform-title">Разрабатываемая криптоплатформа «Байнекс»</span>
                 <p class="cryptoplatform-subtitle">Обменные операции с биржевым функционалом</p>
-                <div id="pdInnerForm"></div>
-                <button class="lern" onclick="location.href='./learn.html'">Узнать о запуске первым</button>
+
+                <button class="lern">Узнать о запуске первым</button>
 
             </div>
         </section> <!--cryptoplatform-->
@@ -35,55 +35,13 @@
 
         </section> <!--video-container-->
 
-        <section class="information">
-            <div class="information-container">
-
-                <div class="main-information">
-                    <span class="information-title">Общая информация</span>
-                    <p class="information-subtitle">Оператором криптоплатформы BYNEX является Общество с ограниченной ответственностью «ЕРПБЕЛ». УНП 690610877 <br><br>
-                        Адрес: 220141, г. Минск, пр. Независимости, 172, офис 308 Банковские реквизиты: р/с BY54BAPB30122317100170000000 в ОАО "Белагропромбанк" <br><br>
-                        Адрес банка: 220036 г. Минск, пр. Жукова, 3, БИК BAPBBY2X Адрес электронной почты: <a href="mailto:support@bynex.by">support@bynex.by</a> <br><br>
-                        Общество с ограниченной ответственностью «ЕРПБЕЛ» является резидентом Парка высоких технологий с 2008 года 
-                        (свидетельство о регистрации № 0000054 от 10.10.2008) и осуществляет свою деятельность в соответствии с Декретом Президента Республики Беларусь
-                        от 21 декабря 2017 г. № 8 и иным законодательством. <br><br>
-                        Торги токенами на криптоплатформе BYNEX проводятся круглосуточно.</p>
-                </div>
-
-                <div class="links">
-                    <span class="information-title">Полезные ссылки</span>
-                    <p class="information-subtitle">Котировальный лист расположен по ссылке <a href="https://bynex.by/docs/quotation_sheet">https://bynex.by/docs/quotation_sheet</a> <br><br> 
-                        Архив цен на токены, по которым совершались сделки с токенами на криптоплатформе BYNEX расположен по 
-                        ссылке <a href="https://bynex.by/docs/price_archive">https://bynex.by/docs/price_archive</a> <br><br>
-                        Общие условия реализации расположены по ссылке <a href="https://bynex.by/docs/terms">https://bynex.by/docs/terms</a> <br><br> 
-                        Порядок управления конфликтом интересов расположен по 
-                        ссылке — <a href="https://bynex.by/docs/conflict_of_interest">https://bynex.by/docs/conflict_of_interest</a> <br><br> 
-                        Требования к рекламе деятельности оператора криптоплатформы расположены по ссылке — <a href="https://bynex.by/docs/ads">https://bynex.by/docs/ads</a></p>
-                </div>
-
-                <div class="immaterial-information">
-                    <div class="dispute">
-                        <span class="information-title">Разрешение споров</span>
-                        <p class="information-subtitle">В случае, несогласия ПОЛЬЗОВАТЕЛЯ с действиями (бездействием) ООО «ЕРПБЕЛ» ПОЛЬЗОВАТЕЛЬ вправе обратиться 
-                            в суд в соответствии с порядком, указанном в ПОЛЬЗОВАТЕЛЬСКОМ СОГЛАШЕНИИ, учитывая досудебный (претензионный) порядок разрешения споров. 
-                            ПОЛЬЗОВАТЕЛЬ вправе предложить ООО «ЕРПБЕЛ» урегулировать возникший спор посредством медиации.</p>
-                    </div>
-
-                    <div class="report">
-                        <span class="information-title">Хранение отчетов</span>
-                        <p class="information-subtitle">Услуги по хранению (депонированию) отчетов о действиях пользователей на криптоплатформе BYNEX и количестве их 
-                            активов в соответствии с требованиями ПВТ оказываются Обществом с ограниченной ответственностью «Бидмартс». Адрес: 220141, г. Минск, 
-                            пр-т. Независимости 172, офис 311 <br>
-                            Адрес электронной почты: <a href="mailto:bfi@bidmart.by">bfi@bidmart.by</a> 
-                            Контактный телефон: <a href="tel:+375 (29) 645-37-10">+375 (29) 645-37-10</a></p>
-                    </div>
-                </div>
-            </div> <!--information-container-->
-        </section> <!--information-->
+        <div id="information"></div>
     </main>
 
-    <footer>
-        <span class="footer-quote">2020 BYNEX.BY</span>
-    </footer>
-    
+    <div id="footer"></div>
+
+
+    <div id="pdInnerForm"></div>
+
 </body>
 </html>

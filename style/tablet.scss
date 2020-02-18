@@ -1,19 +1,5 @@
 @media screen and (max-width: 1085px) {
 
-
-    .video-container {
-        video {
-            max-width: 90%;
-        }
-    }
-
-    .form {
-        left: 0;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 605px) {
     .header-container {
         .login {
             .enter {
@@ -34,6 +20,23 @@
             }
         }
     }
+    .navi-underline {
+        display: none;
+    }
+
+    .video-container {
+        video {
+            max-width: 90%;
+        }
+    }
+
+    .form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 605px) {
+    
 
     .information-container {
         max-width: 405px;
