@@ -1,21 +1,24 @@
 window.addEventListener('load', () => {
 
-    let openMenu = document.getElementsByClassName('menu-button')[0];
-    let close = document.getElementsByClassName('close')[0];
-    let hamburgerMenu = document.getElementsByClassName('hamburger-menu')[0];
-    let button = document.getElementById('enter-form');
-
-    openMenu.addEventListener('click', () => {
-        hamburgerMenu.style.display = 'block';
-    });
-
-    close.addEventListener('click', () => {
-        hamburgerMenu.style.display = 'none';
-    });
-    // button.addEventListener ('click', () => {
-    //     hamburgerMenu.style.display = 'none';
-    // });
+    openHeader();
+    
 }); 
+
+function openHeader () {
+    let header = document.getElementById('openHeader');
+
+    header.innerHTML = `
+        <div class="header-container">
+            <div class="logo"><img src="./assets/images/logo.svg" alt="logo"></div>
+
+            <div class="login">
+                <button class="enter" id="enter" onclick="pdOpenWindows(true, 1)">Войти</span>
+                <button class="registration" id="registr" onclick="pdOpenWindows(true, 2)">Зарегистрироваться</span>
+                <button class="menu-button"><img src="./assets/images/menu.png" onclick="showHamburgerMenu()"></button>
+            </div>
+        </div>
+    `
+}
 
 
 function pdOpenWindows (a, content) {
@@ -57,7 +60,7 @@ function pdOpenWindows (a, content) {
     } else {
         pdInnerForm.innerHTML = '';
     }
-}
+} //pdOpenWindows()
 
 function switchPassword () {
     let password = document.getElementById('password');
@@ -74,4 +77,25 @@ function switchPassword () {
 
 function closeForm () {
     pdInnerForm.innerHTML = '';
+}
+
+function showHamburgerMenu() {
+    let hamburgerMenu = document.getElementById('menu-button');
+
+    hamburgerMenu.innerHTML = `
+
+        <div class="hamburger-menu">
+            <ul>
+                <li><img src="./assets/images/cancel.png" alt="" class="close" onclick="closeHamburgerMenu ()"></li>
+                <li class="suggest-menu" id="enter" onclick="pdOpenWindows(true, 1)">Войти</li>
+                <li class="suggest-menu" id="registr" onclick="pdOpenWindows(true, 2)">Зарегистрироваться</li>
+            </ul>
+        </div>
+
+    `
+}
+
+function closeHamburgerMenu () {
+    let hamburgerMenu = document.getElementById('menu-button');
+    hamburgerMenu.innerHTML = '';
 }

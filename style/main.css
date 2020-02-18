@@ -86,8 +86,7 @@ html, body {
   cursor: pointer;
 }
 
-.header-container .hamburger-menu {
-  display: none;
+.hamburger-menu {
   position: absolute;
   z-index: 5;
   width: 100vw;
@@ -96,7 +95,7 @@ html, body {
           box-shadow: 0px 0px 900px 900px rgba(0, 0, 0, 0.9);
 }
 
-.header-container .hamburger-menu ul {
+.hamburger-menu ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -107,7 +106,7 @@ html, body {
           align-items: center;
 }
 
-.header-container .hamburger-menu ul li {
+.hamburger-menu ul li {
   font-family: "Fira Sans";
   font-style: normal;
   font-weight: 500;
@@ -124,7 +123,7 @@ html, body {
   cursor: pointer;
 }
 
-.header-container .hamburger-menu ul li img {
+.hamburger-menu ul li img {
   vertical-align: middle;
 }
 

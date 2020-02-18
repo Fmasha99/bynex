@@ -13,48 +13,18 @@
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <div class="logo"><img src="./assets/images/logo.svg" alt="logo"></div>
-        
-            <div class="login">
-                <button class="enter" id="enter" onclick="pdOpenWindows(true, 1)">Войти</span>
-                <button class="registration" id="registr" onclick="pdOpenWindows(true, 2)">Зарегистрироваться</span>
-                <button class="menu-button"><img src="./assets/images/menu.png" alt=""></button>
-            </div><!--login-->
-            <div class="hamburger-menu">
-                <ul>
-                    <li><img src="./assets/images/cancel.png" alt="" class="close"></li>
-                    <li class="suggest-menu" id="enter" onclick="pdOpenWindows(true, 1)">Войти</li>
-                    <li class="suggest-menu" id="registr" onclick="pdOpenWindows(true, 2)">Зарегистрироваться</li>
-                </ul>
-            </div>
-        </div><!--header-container-->
+        <div id="openHeader"></div>
+        <div id="menu-button"></div>
     </header>
 
     <main>
-        <!-- <section class="form">
-            <div class="form-options">
-                <span class="form-name" id="form-name"></span>
-                <img src="./assets/images/cancel.png" alt="" class="form-image" id="close-button">
-            </div>
-            <div class="enter-options">
-                <p class="placeholder-login" id="placeholder-login"></p>
-                <input type="text" class="login" id="login">
-                <p class="placeholder-password" id="placeholder-password"></p>
-                <div class="password-container">
-                    <input type="password" class="password" id="password">
-                    <img src="./assets/images/show.png" id="show-password" onclick="switchPassword()">
-                </div>
-                <button type="submit" class="enter-form" id='enter-form'></button>
-            </div>
-        </section> -->
 
         <section class="cryptoplatform">
             <div class="cryptoplatform-container">
                 <span class="cryptoplatform-title">Разрабатываемая криптоплатформа «Байнекс»</span>
                 <p class="cryptoplatform-subtitle">Обменные операции с биржевым функционалом</p>
                 <div id="pdInnerForm"></div>
-                <button class="lern">Узнать о запуске первым</button>
+                <button class="lern" onclick="location.href='./learn.html'">Узнать о запуске первым</button>
 
             </div>
         </section> <!--cryptoplatform-->
