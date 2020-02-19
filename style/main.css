@@ -46,10 +46,16 @@ html, body {
 
 .header-container .logo {
   padding-left: 29px;
+  cursor: pointer;
+}
+
+.header-container .logo .logo-arrow {
+  display: none;
 }
 
 .header-container .navi-underline {
   border-bottom: 1px solid rgba(255, 255, 255, 0);
+  margin: 11px 13px 11px 12px;
 }
 
 .header-container .navi-underline a {

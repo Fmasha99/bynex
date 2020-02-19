@@ -39,11 +39,17 @@ header {
     margin: 0 auto;
     .logo {
         padding-left: 29px;
+        cursor: pointer;
+
+        .logo-arrow {
+            display: none;
+        }
     }
     
 
     .navi-underline {
         border-bottom: 1px solid rgba(255, 255, 255, 0);
+        margin: 11px 13px 11px 12px;
 
         a {
             text-decoration: none;
