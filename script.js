@@ -8,7 +8,7 @@ function openHeader () {
 
     header.innerHTML = `
         <div class="header-container">
-            <div class="logo"><img src="/assets/images/logo.svg" alt="logo"></div>
+            <div class="logo"><img src="/assets/images/logo.svg" alt="logo" onclick="location.href='/'"></div>
 
             <div class="navi-underline ${document.location.pathname === '/' ? 'navi-underline-selected' : ''}"><a href="/">Главная</a></div>
             <div class="navi-underline ${document.location.pathname === '/learn/' ? 'navi-underline-selected' : ''}"><a href="/learn/">Не Главная</a></div>
@@ -72,10 +72,10 @@ function switchPassword () {
 
     if (password.type == "password") {
         password.type = "text";
-        showPassword.src = "../assets/images/eye.png";
+        showPassword.src = "./assets/images/eye.png";
     } else if (password.type == "text") {
         password.type = "password";
-        showPassword.src = "../assets/images/show.png";
+        showPassword.src = "./assets/images/show.png";
     }
 }
 
