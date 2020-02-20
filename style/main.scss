@@ -124,6 +124,18 @@ header {
    
 } //header-container
 
+.none {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.rotate {
+    transform: rotate(180deg);
+}
+
 .hamburger-menu {
     position: absolute;
     z-index: 5;

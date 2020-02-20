@@ -10,16 +10,15 @@ function openHeader () {
         <div class="header-container">
             <div class="logo">
             <img src="/assets/images/logo.svg" alt="logo" onclick="location.href='/'">
-            <img src="/assets/images/down-arrow.png" class="logo-arrow">
+            <img src="/assets/images/down-arrow.png" id="logoArrow" class="logo-arrow" onclick="showMenu()">
             </div>
 
-            <div class="navi-underline ${document.location.pathname === '/' ? 'navi-underline-selected' : ''}"><a href="/">Главная</a></div>
-            <div class="navi-underline ${document.location.pathname === '/learn/' ? 'navi-underline-selected' : ''}"><a href="/learn/">Не Главная</a></div>
+            <div id="main" class="navi-underline ${document.location.pathname === '/' ? 'navi-underline-selected' : ''}"><a href="/">Главная</a></div>
+            <div id="notMain" class="navi-underline ${document.location.pathname === '/learn/' ? 'navi-underline-selected' : ''}"><a href="/learn/">Не Главная</a></div>
 
             <div class="login">
                 <button class="enter" id="enter" onclick="pdOpenWindows(true, 1)">Войти</span>
                 <button class="registration" id="registr" onclick="pdOpenWindows(true, 2)">Зарегистрироваться</span>
-                <button class="menu-button"><img src="/assets/images/menu.png" onclick="showHamburgerMenu()"></button>
             </div>
         </div>
     `
@@ -86,30 +85,34 @@ function closeForm () {
     pdInnerForm.innerHTML = '';
 }
 
-function showHamburgerMenu() {
-    let hamburgerMenu = document.getElementById('menu-button');
 
-    hamburgerMenu.innerHTML = `
+function showMenu () {
+    console.log('menu');
 
-        <div class="hamburger-menu">
-            <ul>
-                <li><img src="/assets/images/cancel.png" alt="" class="close" onclick="closeHamburgerMenu ()"></li>
-                <li><a href="/">Главная</a></li>
-                <li><a href="/learn/">Не Главная</a></li>
-                <li class="suggest-menu" id="enter" onclick="pdOpenWindows(true, 1)">Войти</li>
-                <li class="suggest-menu" id="registr" onclick="pdOpenWindows(true, 2)">Зарегистрироваться</li>
-                
-            </ul>
-        </div>
+    let arrow = document.getElementById('logoArrow');
+    let main = document.getElementById('main');
+    let notMain = document.getElementById('notMain');
+    let enter = document.getElementById('enter');
+    let registr = document.getElementById('registr');
 
-    `
+    let consist = arrow.classList.contains('rotate');
+
+    if (consist) {
+        main.style.display = "none";
+        notMain.style.display = "none";
+        enter.style.display = "none";
+        registr.style.display = "none";
+        arrow.classList.remove('rotate');
+    } else {
+    main.style.display = "block";
+    notMain.style.display = "block";
+    enter.style.display = "block";
+    registr.style.display = "block";
+    arrow.classList.add('rotate');
+    }
+
+    
 }
-
-function closeHamburgerMenu () {
-    let hamburgerMenu = document.getElementById('menu-button');
-    hamburgerMenu.innerHTML = '';
-}
-
 
 function openInformationSection() {
     let information = document.getElementById('information');

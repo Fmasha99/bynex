@@ -28,6 +28,13 @@
   }
   .header-container .login .enter {
     margin-right: 0;
+    display: none;
+  }
+  .header-container .login .registration {
+    display: none;
+  }
+  .navi-underline {
+    display: none;
   }
   .video-container video {
     max-width: 90%;

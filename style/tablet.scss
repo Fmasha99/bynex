@@ -19,30 +19,17 @@
 
             .enter {
                 margin-right: 0;
+                display: none;
+            }
+
+            .registration {
+                display: none;
             }
         }
-        // .login {
-        //     .enter {
-        //         display: none;
-        //     }
-
-        //     .registration {
-        //         display: none;
-        //     }
-
-        //     .menu-button {
-        //         display: block;
-        //         background: none;
-        //         border: none;
-        //         img {
-                    
-        //         }
-        //     }
-        // }
     }
-    // .navi-underline {
-    //     display: none;
-    // }
+    .navi-underline {
+        display: none;
+    }
 
     .video-container {
         video {
