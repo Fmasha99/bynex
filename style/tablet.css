@@ -12,29 +12,17 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-bottom: 3%;
   }
   .header-container .logo .logo-arrow {
     display: block;
     margin-left: 10%;
   }
-  .header-container .login {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .header-container .login .enter {
-    margin-right: 0;
+  .noDisplay {
     display: none;
   }
-  .header-container .login .registration {
-    display: none;
-  }
-  .navi-underline {
-    display: none;
+  .noDisplayDes {
+    display: block;
   }
   .video-container video {
     max-width: 90%;

@@ -10,16 +10,17 @@ function openHeader () {
         <div class="header-container">
             <div class="logo">
             <img src="/assets/images/logo.svg" alt="logo" onclick="location.href='/'">
-            <img src="/assets/images/down-arrow.png" id="logoArrow" class="logo-arrow" onclick="showMenu()">
+            <img src="/assets/images/down-arrow.png" id="logoArrow" class="logo-arrow noDisplayDes" onclick="document.getElementById('menu').classList.toggle('noDisplay')">
             </div>
 
-            <div id="main" class="navi-underline ${document.location.pathname === '/' ? 'navi-underline-selected' : ''}"><a href="/">Главная</a></div>
-            <div id="notMain" class="navi-underline ${document.location.pathname === '/learn/' ? 'navi-underline-selected' : ''}"><a href="/learn/">Не Главная</a></div>
 
-            <div class="login">
+            <div id="menu" class="menu noDisplay">
+                <div id="main" class="navi-underline ${document.location.pathname === '/' ? 'navi-underline-selected' : ''}"><a href="/">Главная</a></div>
+                <div id="notMain" class="navi-underline ${document.location.pathname === '/learn/' ? 'navi-underline-selected' : ''}"><a href="/learn/">Не Главная</a></div>
                 <button class="enter" id="enter" onclick="pdOpenWindows(true, 1)">Войти</span>
                 <button class="registration" id="registr" onclick="pdOpenWindows(true, 2)">Зарегистрироваться</span>
             </div>
+
         </div>
     `
 }
@@ -104,11 +105,11 @@ function showMenu () {
         registr.style.display = "none";
         arrow.classList.remove('rotate');
     } else {
-    main.style.display = "block";
-    notMain.style.display = "block";
-    enter.style.display = "block";
-    registr.style.display = "block";
-    arrow.classList.add('rotate');
+        main.style.display = "block";
+        notMain.style.display = "block";
+        enter.style.display = "block";
+        registr.style.display = "block";
+        arrow.classList.add('rotate');
     }
 
     

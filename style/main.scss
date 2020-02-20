@@ -26,6 +26,8 @@ header {
 
 } //header
 
+.noDisplayDes {display: none}
+
 .header-container {
     display: flex;
     align-items: center;
@@ -46,10 +48,13 @@ header {
         }
     }
     
-
+    .menu {
+        // display: flex;
+    } 
     .navi-underline {
         border-bottom: 1px solid rgba(255, 255, 255, 0);
-        margin: 11px 13px 11px 12px;
+        margin: 11px 43px 11px 12px;
+        float: left;
 
         a {
             text-decoration: none;
@@ -61,65 +66,63 @@ header {
         border-color: #ddd;
     }
 
-    .login {
+ 
 
-        .enter {
-            cursor: pointer;
-            font-family: "Fira Sans";
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 22px;
+    .enter {
+        cursor: pointer;
+        font-family: "Fira Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
             
-            color: #153843;
-            border: none;
-            background: none;
+        color: #153843;
+        border: none;
+        background: none;
 
-            margin-right: 33px;
+        margin-right: 33px;
 
-            padding: 11px 13px 11px 12px;
-            border: 1px solid white;
+        padding: 11px 13px 11px 12px;
+        border: 1px solid white;
 
-            transition: transform 0.4s;
+        transition: transform 0.4s;
 
-            &:hover {
-                transform: translateY(-2px);
+        &:hover {
+            transform: translateY(-2px);
                 
-            }
         }
+    }
 
-        .registration {
-            cursor: pointer;
-            font-family: "Fira Sans";
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 22px;
+    .registration {
+        cursor: pointer;
+        font-family: "Fira Sans";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
 
-            color: #153843;
-            background: none;
+        color: #153843;
+        background: none;
 
-            padding: 11px 13px 11px 12px;
+        padding: 11px 13px 11px 12px;
 
-            border: 1px solid #153843;
-            box-sizing: border-box;
-            border-radius: 5px;
+        border: 1px solid #153843;
+        box-sizing: border-box;
+        border-radius: 5px;
 
-            transition: transform 0.4s;
+        transition: transform 0.4s;
 
-            &:hover {
-                transform: translateY(-2px);
+        &:hover {
+            transform: translateY(-2px);
                 
-            }
         }
+    }
 
-        .menu-button {
-            display: none;
-            cursor: pointer;
-        }
+    .menu-button {
+        display: none;
+        cursor: pointer;
+    }
 
-        
-    } //.login
 
    
 } //header-container

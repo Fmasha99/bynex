@@ -26,6 +26,10 @@ html, body {
   height: 100hv;
 }
 
+.noDisplayDes {
+  display: none;
+}
+
 .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -55,7 +59,8 @@ html, body {
 
 .header-container .navi-underline {
   border-bottom: 1px solid rgba(255, 255, 255, 0);
-  margin: 11px 13px 11px 12px;
+  margin: 11px 43px 11px 12px;
+  float: left;
 }
 
 .header-container .navi-underline a {
@@ -67,7 +72,7 @@ html, body {
   border-color: #ddd;
 }
 
-.header-container .login .enter {
+.header-container .enter {
   cursor: pointer;
   font-family: "Fira Sans";
   font-style: normal;
@@ -86,12 +91,12 @@ html, body {
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
-.header-container .login .enter:hover {
+.header-container .enter:hover {
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
 }
 
-.header-container .login .registration {
+.header-container .registration {
   cursor: pointer;
   font-family: "Fira Sans";
   font-style: normal;
@@ -111,12 +116,12 @@ html, body {
   transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
-.header-container .login .registration:hover {
+.header-container .registration:hover {
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
 }
 
-.header-container .login .menu-button {
+.header-container .menu-button {
   display: none;
   cursor: pointer;
 }

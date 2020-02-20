@@ -5,30 +5,40 @@
         flex-direction: column;
 
         .logo {
-            display: flex;
-            align-items: center;
+                display: flex;
+                align-items: center;
+                margin-bottom: 3%;
             .logo-arrow {
                 display: block;
                 margin-left: 10%;
-            }
+            } 
         }
 
-        .login {
-            display: flex;
-            flex-direction: column;
+    //     .enter {
+    //             margin-right: 0;
+    //             display: none;
+    //             text-transform: uppercase;
+    //         }
 
-            .enter {
-                margin-right: 0;
-                display: none;
-            }
+    //         .registration {
+    //             display: none;
+    //             text-transform: uppercase;
+    //         }
 
-            .registration {
-                display: none;
-            }
-        }
     }
-    .navi-underline {
+
+    .noDisplay {
         display: none;
+    }
+
+    .noDisplayDes {
+        display: block;
+    }
+
+
+    .navi-underline {
+    //     display: none;
+    //     text-transform: uppercase;
     }
 
     .video-container {
