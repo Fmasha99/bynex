@@ -28,6 +28,7 @@ header {
 
 .noDisplayDes {display: none}
 
+
 .header-container {
     display: flex;
     align-items: center;
@@ -49,11 +50,12 @@ header {
     }
     
     .menu {
-        // display: flex;
+        // display: contents;
+        overflow: hidden;
     } 
     .navi-underline {
         border-bottom: 1px solid rgba(255, 255, 255, 0);
-        margin: 11px 43px 11px 12px;
+        margin: 11px 11px 11px 12px;
         float: left;
 
         a {
@@ -75,7 +77,7 @@ header {
         font-weight: 500;
         font-size: 18px;
         line-height: 22px;
-            
+        float: left;
         color: #153843;
         border: none;
         background: none;
@@ -100,7 +102,7 @@ header {
         font-weight: 500;
         font-size: 18px;
         line-height: 22px;
-
+        float: left;
         color: #153843;
         background: none;
 

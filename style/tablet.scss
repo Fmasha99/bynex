@@ -14,16 +14,19 @@
             } 
         }
 
-    //     .enter {
-    //             margin-right: 0;
-    //             display: none;
-    //             text-transform: uppercase;
-    //         }
+        .enter {
+        width: 100%;
+            }
 
-    //         .registration {
-    //             display: none;
-    //             text-transform: uppercase;
-    //         }
+        .registration {
+            width: 100%;
+        }
+
+        .navi-underline {
+            width: 100%;
+            text-align: center;
+            margin: 11px 11px 11px 0px;
+        }
 
     }
 
@@ -36,10 +39,7 @@
     }
 
 
-    .navi-underline {
-    //     display: none;
-    //     text-transform: uppercase;
-    }
+    
 
     .video-container {
         video {

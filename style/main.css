@@ -57,9 +57,13 @@ html, body {
   display: none;
 }
 
+.header-container .menu {
+  overflow: hidden;
+}
+
 .header-container .navi-underline {
   border-bottom: 1px solid rgba(255, 255, 255, 0);
-  margin: 11px 43px 11px 12px;
+  margin: 11px 11px 11px 12px;
   float: left;
 }
 
@@ -79,6 +83,7 @@ html, body {
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
+  float: left;
   color: #153843;
   border: none;
   background: none;
@@ -103,6 +108,7 @@ html, body {
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
+  float: left;
   color: #153843;
   background: none;
   padding: 11px 13px 11px 12px;

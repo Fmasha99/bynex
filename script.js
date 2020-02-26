@@ -10,19 +10,25 @@ function openHeader () {
         <div class="header-container">
             <div class="logo">
             <img src="/assets/images/logo.svg" alt="logo" onclick="location.href='/'">
-            <img src="/assets/images/down-arrow.png" id="logoArrow" class="logo-arrow noDisplayDes" onclick="document.getElementById('menu').classList.toggle('noDisplay')">
+            <img src="/assets/images/down-arrow.png" id="logoArrow" class="logo-arrow noDisplayDes" onclick="showMenu()">
             </div>
 
 
             <div id="menu" class="menu noDisplay">
                 <div id="main" class="navi-underline ${document.location.pathname === '/' ? 'navi-underline-selected' : ''}"><a href="/">Главная</a></div>
                 <div id="notMain" class="navi-underline ${document.location.pathname === '/learn/' ? 'navi-underline-selected' : ''}"><a href="/learn/">Не Главная</a></div>
-                <button class="enter" id="enter" onclick="pdOpenWindows(true, 1)">Войти</span>
-                <button class="registration" id="registr" onclick="pdOpenWindows(true, 2)">Зарегистрироваться</span>
+                <button class="enter" id="enter" onclick="pdOpenWindows(true, 1)">Войти</button>
+                <button class="registration" id="registr" onclick="pdOpenWindows(true, 2)">Зарегистрироваться</button>
             </div>
 
         </div>
     `
+}
+
+
+function showMenu () {
+    document.getElementById('menu').classList.toggle('noDisplay');
+    document.getElementById('logoArrow').classList.toggle('rotate');
 }
 
 
@@ -75,44 +81,15 @@ function switchPassword () {
 
     if (password.type == "password") {
         password.type = "text";
-        showPassword.src = "./assets/images/eye.png";
+        showPassword.src = "/assets/images/eye.png";
     } else if (password.type == "text") {
         password.type = "password";
-        showPassword.src = "./assets/images/show.png";
+        showPassword.src = "/assets/images/show.png";
     }
 }
 
 function closeForm () {
     pdInnerForm.innerHTML = '';
-}
-
-
-function showMenu () {
-    console.log('menu');
-
-    let arrow = document.getElementById('logoArrow');
-    let main = document.getElementById('main');
-    let notMain = document.getElementById('notMain');
-    let enter = document.getElementById('enter');
-    let registr = document.getElementById('registr');
-
-    let consist = arrow.classList.contains('rotate');
-
-    if (consist) {
-        main.style.display = "none";
-        notMain.style.display = "none";
-        enter.style.display = "none";
-        registr.style.display = "none";
-        arrow.classList.remove('rotate');
-    } else {
-        main.style.display = "block";
-        notMain.style.display = "block";
-        enter.style.display = "block";
-        registr.style.display = "block";
-        arrow.classList.add('rotate');
-    }
-
-    
 }
 
 function openInformationSection() {

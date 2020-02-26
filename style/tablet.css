@@ -18,6 +18,17 @@
     display: block;
     margin-left: 10%;
   }
+  .header-container .enter {
+    width: 100%;
+  }
+  .header-container .registration {
+    width: 100%;
+  }
+  .header-container .navi-underline {
+    width: 100%;
+    text-align: center;
+    margin: 11px 11px 11px 0px;
+  }
   .noDisplay {
     display: none;
   }
