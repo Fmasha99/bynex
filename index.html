@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./style/laptop.css">
     <link rel="stylesheet" href="./style/tablet.css">
     <link rel="stylesheet" href="./style/mobile.css">
+    <script src="/currency.js"></script>
     <script src="/script.js"></script>
     <link rel="icon" href="./assets/images/favicon.png" type="image/icon type">
     <title>BYNEX</title>
@@ -41,6 +42,18 @@
             <p class="video-subtitle">Изображение носит иллюстративных характер и не отображает реальных данных</p>
 
         </section> <!--video-container-->
+
+        <section class="table-container">
+            <table id='current-table'>
+                <tr class="header">
+                    <th>НАЗВАНИЕ</th>
+                    <th>СИМВОЛ</th>
+                    <th>ЦЕНА</th>
+                    <th>КАПИТАЛИЗАЦИЯ</th>
+                    <th>ИЗМЕНИЕ (24ч) <img id="refresh" src="/assets/images/refresh.png"></th>
+                </tr>
+            </table>
+        </section>
 
         <div id="information"></div>
     </main>
