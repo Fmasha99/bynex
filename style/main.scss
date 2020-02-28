@@ -549,9 +549,14 @@ main {
             margin-left: 40%;
             cursor: pointer;
             vertical-align: middle;
+            transition: transform .5s;
         }
 
-        .items {
+        .rotate-refresh {
+            transform: rotate(360deg);
+        }
+
+        #items {
             margin-top: 20px;
             .table-item{
                 font-family: "Fira Sans";
@@ -562,6 +567,16 @@ main {
 
                 color: #153843;
 
+            }
+
+            .value-table-item {
+                font-family: "Fira Sans";
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 30px;
+
+                color: #153843;
             }
 
             .green {
