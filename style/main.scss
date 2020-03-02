@@ -553,7 +553,13 @@ main {
         }
 
         .rotate-refresh {
-            transform: rotate(360deg);
+            animation-name: rotate;
+            animation-duration: 0.7s;
+        }
+
+        @keyframes rotate {
+            from {transform: rotate(0deg);}
+            to {transform: rotate(360deg);}
         }
 
         #items {
