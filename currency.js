@@ -1,6 +1,6 @@
 window.addEventListener('load', ()=> {
 
-    var requiredSymbols = ["BTC", "ETH", ]
+    // var requiredSymbols = ["BTC", "ETH", ]
 
     let dataPromise = getData('https://min-api.cryptocompare.com/data/pricemultifull?fsyms=BTC,ETH,XRP,BCH,USDT,BSV,LTC,EOS,BNB,XTZ&tsyms=USD&api_key={${a7c6ca3cbc2490b645dcb7daa84c800240e6ef8317fabdc6f46a5a68803264a3}}');
 
@@ -15,8 +15,7 @@ window.addEventListener('load', ()=> {
 
 //  получает данные из объекта
 
-async function getData(currencyApi. array) {
-    console.log(currencyApi)
+async function getData(currencyApi, array) {
     let response = await fetch(currencyApi)
 
     if (response.ok) {
@@ -26,14 +25,6 @@ async function getData(currencyApi. array) {
     } else {
         return null
     }
-    // .then(response => {
-    //     return response.json();
-    // })
-    // .then(data => {
-    //     let dataRAW = data.RAW;
-    //     let sumRAW = Object.entries(dataRAW);
-    //     drawTable(sumRAW);
-    // })
 }
 
 
@@ -50,12 +41,22 @@ function drawTable(data) {
         let nameOfCurrent = ['Bitcoin', 'Ethereum', 'XRP', 'Bitcoin Cash', 'Tether', 'Bitcoin SV', 'Litecoin', 'EOS', 'Binance Coin', 'Tezos']
         let symbol = el[1].USD.FROMSYMBOL;
 
+        let price = el[1].USD.PRICE;
+        let fixedPrice = price.toFixed(2);
+
+        let capit = el[1].USD.MKTCAP;
+        let fCapit = capit.toFixed(2);
+        let fixedCapit = fCapit.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+
+        let change = el[1].USD.CHANGEPCT24HOUR;
+        let fixedChange = change.toFixed(3);
+
         createLine.innerHTML = `
         <td class="table-item columnName">${nameOfCurrent[i]}</td>
         <td class="table-item columnSymbol">${symbol}</td>
-        <td class="value-table-item green columnPrice">- $</td>
-        <td class="value-table-item columnCapit">- %</td>
-        <td class="value-table-item red columnChange">- %</td>
+        <td class="value-table-item green columnPrice">${fixedPrice} $</td>
+        <td class="value-table-item columnCapit">${fixedCapit} %</td>
+        <td class="value-table-item red columnChange">${fixedChange} %</td>
         `
         document.getElementById('current-table').appendChild(createLine);
     }
@@ -66,7 +67,6 @@ function updateTable() {
     var prices = document.getElementsByClassName("columnPrice");
     var capitalizationRows = document.getElementsByClassName("columnCapit");
     var changeRows = document.getElementsByClassName("columnChange");
-    console.log("hello");
     dataPromise.then(data => {
 
         for (let i = 0; i < data.length; i++) {
@@ -74,15 +74,15 @@ function updateTable() {
             let price = el[1].USD.PRICE;
             let fixedPrice = price.toFixed(2);
 
-            prices[i].textContent = fixedPrice;
+            prices[i].textContent = fixedPrice + " $";
 
             let capit = el[1].USD.MKTCAP;
             let fCapit = capit.toFixed(2);
             let fixedCapit = fCapit.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-            capitalizationRows[i].textContent = fixedCapit;
+            capitalizationRows[i].textContent = fixedCapit + " %";
             let change = el[1].USD.CHANGEPCT24HOUR;
             let fixedChange = change.toFixed(3);
-            changeRows[i].textContent = fixedChange;
+            changeRows[i].textContent = fixedChange + " %";
         }
     });
 }
